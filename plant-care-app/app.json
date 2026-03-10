@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "植物养护助手",
+    "slug": "plant-care-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "plant-care",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#2E7D32",
+      "resizeMode": "contain"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.plantcare.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#2E7D32"
+      },
+      "package": "com.plantcare.app",
+      "usesCleartextTraffic": true
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "允许访问相册以选择植物照片",
+          "cameraPermission": "允许使用相机拍摄植物照片"
+        }
+      ],
+      "expo-asset",
+      "expo-font"
+    ]
+  }
+}
